@@ -1,0 +1,7 @@
+/node_modules/
+/dist/
+/demo/vc/.env.json
+/demo/.env.json
+.DS_Store
+/coverage
+/script/dist

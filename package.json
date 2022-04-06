@@ -1,0 +1,58 @@
+{
+    "name": "@hashgraph/hedera-vc-sample",
+    "version": "1.0.0",
+    "engines": {
+        "npm": ">=8.1.2",
+        "node": ">=16.13.1"
+    },
+    "description": "Sample Verifiable Credential Using Hedera DID SDK & Status list SDK",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [
+        "dist/**/*"
+    ],
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prepare": "npm run build",
+        "prepublish": "npm run build",
+        "build": "tsc",
+        "build:dev": "tsc --sourceMap -w",
+        "start": "node dist/index.js",
+        "start:dev": "nodemon --inspect dist/index.js",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hashgraph/vc-sdk-js.git"
+    },
+    "author": "Hedera Hashgraph, LLC",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/hashgraph/vc-sdk-js/issues"
+    },
+    "homepage": "https://github.com/hashgraph/vc-sdk-js#readme",
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "@types/node": "^16.7.7",
+        "@types/uuid": "^8.3.4",
+        "jest": "^27.5.1",
+        "nodemon": "^2.0.7",
+        "prettier": "2.5.1",
+        "ts-jest": "^27.1.4",
+        "typescript": "^4.3.2"
+    },
+    "dependencies": {
+        "@hashgraph/did-sdk-js": "github:Meeco/did-sdk-js#ff914da5377fc69d8d9d292232a1aba04f1ba74c",
+        "@hashgraph/sdk": "2.11.3",
+        "bs58": "^5.0.0",
+        "did-jwt": "^5.12.4",
+        "did-jwt-vc": "^2.1.9",
+        "did-resolver": "^3.1.5",
+        "js-base64": "^3.6.1",
+        "moment": "^2.29.1",
+        "multiformats": "^9.6.2",
+        "sha.js": "^2.4.11",
+        "varint": "^6.0.0"
+      
+    }
+}
